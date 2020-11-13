@@ -2,6 +2,10 @@ This is a web-based simple simulation of an election in the US state of
 Georgia. You can specify the voter turnout, and what percent of the vote
 goes to a candidate.
 
+You can run it here:
+
+    https://tzs.github.io/georgia-benford-simulation/
+
 This turnout and vote percent will be applied to each Georgia county, to
 give the total votes for the candidate in that vote based on the number
 of registered voters in that county.
