@@ -41,3 +41,8 @@ voter turnout is not uniform.
 That would not yeild simulated elections that follow Benford's Law. Just as
 with the simple simulation, they would vary widely as you varied the exact
 turnout and vote percentages.
+
+Note: this was just a quick hack, written over maybe 3 hours. If you'd like
+to see a more realistic simulation or better presentation or more data sources
+feel free to fork this. I'm not really an HTML/JS/CSS guy, so you'd be best
+off just starting from scratch.
