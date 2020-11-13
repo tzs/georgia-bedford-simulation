@@ -18,6 +18,10 @@ digit distribution that you might naively expect from Benford's Law, and
 to see how much the distribution changes when you make small changes in
 the voter turnout or in the percent the candidate gets.
 
+If you don't know what Benford's Law is, this might help:
+
+    https://en.wikipedia.org/wiki/Benford%27s_law
+
 Benford's Law only applies to data sets that meet certain criteria, and
 the underlying distribution of population among Georgia counties does not
 meet that criteria, and neither does things that are closely coupled to
