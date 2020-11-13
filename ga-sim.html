@@ -1,0 +1,73 @@
+<!doctype html lang="en">
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Georgia Election Simulation</title>
+    <link rel='stylesheet' href='ga-sim.css?1'>
+    <script src="ga-sim.js?1"></script>
+</head>
+<body onload="ready()">
+<span id="what">
+</span>
+<div id="display">
+    <div class="digit" id="row_1"></div>
+    <div class="digit" id="row_2"></div>
+    <div class="digit" id="row_3"></div>
+    <div class="digit" id="row_4"></div>
+    <div class="digit" id="row_5"></div>
+    <div class="digit" id="row_6"></div>
+    <div class="digit" id="row_7"></div>
+    <div class="digit" id="row_8"></div>
+    <div class="digit" id="row_9"></div>
+</div>
+
+<div>
+    <button id="source_ideal">Ideal Benford Distribution</button>
+    <button id="source_sim">Simulation</button>
+<div>
+
+<div>
+    <label for="pct_vote">Voter turnout (pct)</label>
+    <input type="number" id="pct_vote" value="50" min="1" max="100">
+    <br/>
+    <label for="candidate_pct">Candidate's votes(pct)</label>
+    <input type="number" id="candidate_pct" value="50" min="0" max="100">
+</div>
+<p>
+This page shows an ideal first digit distribution according to Benford's Law,
+and the first digit distribution of simulated voting in Georgia counties, based
+on the number of registered voters actually in each country, and a user specified
+voter turnout and percent vote for a particular candidate.
+<p>
+You can switch between showing the reference Benford distribution and the
+simulated distribution using the two buttons directly under the distribution
+display.
+<p>
+To use this most effectively, first look at the ideal reference distribution.
+Then look at the simulation.
+Note how they differ.
+<p>
+Then try changing voter turnout or the percentage the candidate receives.
+As you change these values using the up/down arrows, the distribution will update.
+<p>
+Note how even small changes in turnout or the candidate's percentage can cause
+big changes in the distribution.
+The reason for this is that the underlying county populations (and the
+corresponding number of registerered voters in each) does not
+follow Benford's Law.
+<p>
+If you want to see that distribution, crank the voter turnout and candidate
+percentage both up to 100.
+<p>
+A more realistic simulation would vary the turnout and the candidate's percentage
+by county.
+In the 2020 US election, for example, Trump got higher percentages in smaller
+population counties and Biden got higher percentages in larger population counties.
+Adding those refinements would not improve the conformance to Benford's Law.
+It would just change to giving a different set of non-Benford results than
+the simplified simulation gives.
+<ul id="note">
+</ul>
+</body>
+</html>
+
